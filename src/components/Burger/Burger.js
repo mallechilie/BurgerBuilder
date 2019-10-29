@@ -5,6 +5,7 @@ import Ingredient from "./Ingredients/Ingredients";
 const burger = props => {
     return (
         <div className={classes.Burger}>
+            <p>burger</p>
             <Ingredient type="bread-top" />
             <Ingredient type="cheese" />
             <Ingredient type="meat" />
