@@ -4,8 +4,8 @@ import classes from "./Control.css";
 const control = props => (
   <div className={classes.BuildControl}>
     <div>{props.label}</div>
-    <button className={classes.Less}>Less</button>
-    <button className={classes.More}>More</button>
+    <button className={classes.Less} onClick={props.removeHandler}>Less</button>
+    <button className={classes.More} onClick={props.addHandler}>More</button>
   </div>
 );
 
