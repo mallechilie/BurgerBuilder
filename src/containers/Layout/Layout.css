@@ -1,0 +1,15 @@
+.Content {
+    margin-top: 72px;
+}
+
+@media (min-width: 500px) {
+    .HideSmallScreen {
+        display: none !important;
+    }
+}
+
+@media (max-width: 501px) {
+    .HideBigScreen {
+        display: none !important;
+    }
+}
