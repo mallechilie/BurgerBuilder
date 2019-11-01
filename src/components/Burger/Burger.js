@@ -5,12 +5,11 @@ import Ingredient from "./Ingredients/Ingredients";
 const burger = props => {
   let ingredients;
   ingredients = Object.keys(props.ingredients)
-    .map(key => {
-      //  Insert array
-      return [...Array(props.ingredients[key])].map((_, i) => (
+    .map(key =>
+      [...Array(props.ingredients[key])].map((_, i) => (
         <Ingredient key={key + i} type={key} />
-      ));
-    })
+      ))
+    )
     .reduce((arr, el) => arr.concat(el));
 
   if (ingredients.length === 0) {
